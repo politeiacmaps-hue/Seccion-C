@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMAPS — Inteligencia Territorial</title>
+    <meta name="description" content="Integramos información para comprender territorios, detectar patrones y responder preguntas complejas. Cartografía, Datos, Investigación y Análisis.">
+    
+    <!-- Open Graph / SEO Básico -->
+    <meta property="og:title" content="CMAPS — Inteligencia Territorial">
+    <meta property="og:description" content="Integramos información para comprender territorios, detectar patrones y responder preguntas complejas.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome para iconografía sobria -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- AOS CSS para animaciones sutiles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Tipografía Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',    // Slate 900
+                            card: '#1e293b',    // Slate 800
+                            border: '#334155',  // Slate 700
+                            accent: '#38bdf8',  // Sky 400
+                            muted: '#94a3b8'    // Slate 400
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-accent selection:text-brand-dark">
+
+    <!-- NAVEGACIÓN -->
+    <nav class="fixed w-full z-50 bg-[#0b0f19]/90 backdrop-blur-md border-b border-brand-border/50 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="text-brand-accent">CMAPS</span>
+                <span class="text-xs font-normal text-brand-muted border-l border-brand-border pl-2 uppercase tracking-widest">Inteligencia Territorial</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-xs font-medium uppercase tracking-wider text-brand-muted">
+                <a href="#que-hacemos" class="hover:text-white transition">Qué Hacemos</a>
+                <a href="#soluciones" class="hover:text-white transition">Líneas de Trabajo</a>
+                <a href="#metodo" class="hover:text-white transition">Método SC</a>
+                <a href="#caso" class="hover:text-white transition">Caso Demostrativo</a>
+                <a href="#contacto" class="hover:text-white transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="min-h-screen flex items-center justify-center pt-24 pb-16 px-6 relative border-b border-brand-border/40">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <div class="inline-block px-3 py-1 mb-6 border border-brand-accent/30 bg-brand-accent/10 rounded-full text-brand-accent text-xs font-semibold uppercase tracking-widest">
+                CMAPS — INTELIGENCIA TERRITORIAL
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                INTELIGENCIA TERRITORIAL
+            </h1>
+            
+            <p class="text-lg sm:text-2xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed mb-8">
+                Integramos información para comprender territorios, detectar patrones y responder preguntas complejas.
+            </p>
+            
+            <div class="text-sm font-medium text-brand-accent tracking-wider uppercase border-t border-b border-brand-border/50 py-3 inline-block">
+                Cartografía &middot; Datos &middot; Investigación &middot; Análisis
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN: QUÉ HACEMOS -->
+    <section id="que-hacemos" class="py-24 px-6 border-b border-brand-border/40 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-widest mb-2">Lógica de Trabajo</h2>
+                <h3 class="text-2xl sm:text-4xl font-bold text-white">No partimos del mapa. Partimos de la pregunta.</h3>
+            </div>
+
+            <!-- Flujo Conceptual Simplificado -->
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-4 rounded-lg bg-brand-card border border-brand-border/60">
+                    <span class="text-brand-accent font-mono text-xs block mb-1">01</span>
+                    <span class="text-sm font-semibold text-white">PREGUNTA</span>
+                </div>
+                <div class="p-4 rounded-lg bg-brand-card border border-brand-border/60">
+                    <span class="text-brand-accent font-mono text-xs block mb-1">02</span>
+                    <span class="text-sm font-semibold text-white">DATOS</span>
+                </div>
+                <div class="p-4 rounded-lg bg-brand-card border border-brand-border/60">
+                    <span class="text-brand-accent font-mono text-xs block mb-1">03</span>
+                    <span class="text-sm font-semibold text-white">INTEGRACIÓN</span>
+                </div>
+                <div class="p-4 rounded-lg bg-brand-card border border-brand-border/60">
+                    <span class="text-brand-accent font-mono text-xs block mb-1">04</span>
+                    <span class="text-sm font-semibold text-white">ANÁLISIS</span>
+                </div>
+                <div class="p-4 rounded-lg bg-brand-card border border-brand-border/60">
+                    <span class="text-brand-accent font-mono text-xs block mb-1">05</span>
+                    <span class="text-sm font-semibold text-white">HALLAZGOS</span>
+                </div>
+                <div class="p-4 rounded-lg bg-brand-card border border-brand-border/60">
+                    <span class="text-brand-accent font-mono text-xs block mb-1">06</span>
+                    <span class="text-sm font-semibold text-white">DECISIÓN</span>
+                </div>
+            </div>
+
+            <!-- Explicación de Fuentes de Información -->
+            <div class="mt-16 bg-brand-card/40 border border-brand-border rounded-xl p-8" data-aos="fade-up">
+                <h4 class="text-lg font-semibold text-white mb-4">Múltiples fuentes para investigaciones específicas</h4>
+                <p class="text-brand-muted leading-relaxed mb-6">
+                    La fuente depende de la pregunta que se quiera responder. Trabajamos conectando y correlacionando diversos orígenes de datos:
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-medium text-slate-300">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-brand-accent text-[8px]"></i> Cartografía oficial</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-brand-accent text-[8px]"></i> Información censal</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-brand-accent text-[8px]"></i> Información electoral</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-brand-accent text-[8px]"></i> Datos catastrales</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-brand-accent text-[8px]"></i> Indicadores territoriales</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-brand-accent text-[8px]"></i> Datos socioeconómicos</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-brand-accent text-[8px]"></i> Información del cliente</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-dot text-brand-accent text-[8px]"></i> Fuentes ad hoc</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: SOLUCIONES / LÍNEAS DE TRABAJO -->
+    <section id="soluciones" class="py-24 px-6 border-b border-brand-border/40">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-widest mb-2">Líneas de Trabajo</h2>
+                <h3 class="text-2xl sm:text-4xl font-bold text-white">Cada proyecto responde a una pregunta concreta</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-brand-card border border-brand-border rounded-xl p-8 flex flex-col justify-between" data-aos="fade-up">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Radiografía Territorial</h4>
+                        <p class="text-xs text-brand-accent font-mono mb-4 uppercase">Perfil integral de un territorio</p>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                            Permite comprender a fondo las dinámicas de una zona antes de ejecutar proyectos, inversiones o intervenciones.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-brand-border/50 pt-4 mb-6">
+                            <li>&middot; Perfil demográfico detallado</li>
+                            <li>&middot; Variables y carencias censales</li>
+                            <li>&middot; Indicadores socioeconómicos</li>
+                        </ul>
+                    </div>
+                    <div class="text-xs font-semibold text-slate-400 bg-slate-900/50 p-3 rounded border border-brand-border/30">
+                        Resultado: Tomar decisiones con contexto real del territorio.
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-brand-card border border-brand-border rounded-xl p-8 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Inteligencia Electoral</h4>
+                        <p class="text-xs text-brand-accent font-mono mb-4 uppercase">Evolución del comportamiento territorial</p>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                            Aplicación especializada de nuestra capacidad de análisis territorial para entender fenómenos electorales en el mapa.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-brand-border/50 pt-4 mb-6">
+                            <li>&middot; Participación y abstención histórica</li>
+                            <li>&middot; Competitividad y patrones espaciales</li>
+                            <li>&middot; Cruce territorial con datos socioeconómicos</li>
+                        </ul>
+                    </div>
+                    <div class="text-xs font-semibold text-slate-400 bg-slate-900/50 p-3 rounded border border-brand-border/30">
+                        Resultado: Analizar el comportamiento político desde el territorio.
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-brand-card border border-brand-border rounded-xl p-8 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Investigación Territorial</h4>
+                        <p class="text-xs text-brand-accent font-mono mb-4 uppercase">Estudios para problemas específicos</p>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                            Diseño ad-hoc para responder a cuestionamientos complejos que requieren metodologías no estandarizadas.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-brand-border/50 pt-4 mb-6">
+                            <li>&middot; Integración de múltiples fuentes heterogéneas</li>
+                            <li>&middot; Modelos analíticos personalizados</li>
+                            <li>&middot; Construcción de indicadores propios</li>
+                        </ul>
+                    </div>
+                    <div class="text-xs font-semibold text-slate-400 bg-slate-900/50 p-3 rounded border border-brand-border/30">
+                        Resultado: Resolver preguntas complejas mediante evidencia.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CÓMO TRABAJAMOS (MÉTODO SC) -->
+    <section id="metodo" class="py-24 px-6 border-b border-brand-border/40 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-widest mb-2">Metodología</h2>
+                <h3 class="text-2xl sm:text-4xl font-bold text-white">Método SC</h3>
+                <p class="text-sm text-brand-muted mt-2">Un proceso riguroso y auditable desde la pregunta inicial hasta la propuesta de acción.</p>
+            </div>
+
+            <!-- Pasos del Método SC -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6" data-aos="fade-up">
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-brand-accent font-mono text-sm block mb-2">01. PREGUNTA</span>
+                    <p class="text-xs text-brand-muted">Definición clara del problema o hipótesis a resolver.</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-brand-accent font-mono text-sm block mb-2">02. OBTENCIÓN</span>
+                    <p class="text-xs text-brand-muted">Recopilación de fuentes oficiales, propias o del cliente.</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-brand-accent font-mono text-sm block mb-2">03. INTEGRACIÓN</span>
+                    <p class="text-xs text-brand-muted">Homologación y estructuración en bases de datos geográficas.</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg border-brand-accent/50">
+                    <span class="text-brand-accent font-mono text-sm block mb-2">04. VERIFICACIÓN</span>
+                    <p class="text-xs text-brand-muted">Depuración, contraste e inspección de consistencia técnica.</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-brand-accent font-mono text-sm block mb-2">05. ANÁLISIS</span>
+                    <p class="text-xs text-brand-muted">Procesamiento espacial y correlación de variables.</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-brand-accent font-mono text-sm block mb-2">06. VISUALIZACIÓN</span>
+                    <p class="text-xs text-brand-muted">Representación clara mediante cartografía y salidas ejecutivas.</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-brand-accent font-mono text-sm block mb-2">07. HALLAZGOS</span>
+                    <p class="text-xs text-brand-muted">Identificación de patrones, anomalías y tendencias.</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg border-brand-accent/50">
+                    <span class="text-brand-accent font-mono text-sm block mb-2">08. OPCIONES DE ACCIÓN</span>
+                    <p class="text-xs text-brand-muted">Suministro de evidencia para facilitar la toma de decisiones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: POR QUÉ NOSOTROS -->
+    <section class="py-24 px-6 border-b border-brand-border/40">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-widest mb-2">Criterios de Trabajo</h2>
+                <h3 class="text-2xl sm:text-4xl font-bold text-white">Por qué trabajar con CMAPS</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 bg-brand-card/50 border border-brand-border rounded-xl" data-aos="fade-up">
+                    <h4 class="text-lg font-bold text-white mb-2">1. Integramos lo que está disperso</h4>
+                    <p class="text-sm text-brand-muted leading-relaxed">
+                        Conectamos datos censales, cartografía territorial, registros electorales e indicadores específicos en un solo entorno de consulta analítica.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-brand-card/50 border border-brand-border rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-lg font-bold text-white mb-2">2. Adaptación al problema real</h4>
+                    <p class="text-sm text-brand-muted leading-relaxed">
+                        No aplicamos esquemas rígidos. Cada investigación se estructurar a partir de los objetivos y preguntas puntuales formuladas.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-brand-card/50 border border-brand-border rounded-xl" data-aos="fade-up">
+                    <h4 class="text-lg font-bold text-white mb-2">3. Metodologías replicables</h4>
+                    <p class="text-sm text-brand-muted leading-relaxed">
+                        Trabajamos con capacidad de ajuste de escalas, desde agregación estatal y municipal hasta el detalle fino por sección o manzana.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-brand-card/50 border border-brand-border rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-lg font-bold text-white mb-2">4. Experiencia aplicada al análisis</h4>
+                    <p class="text-sm text-brand-muted leading-relaxed">
+                        Más de dos décadas resolviendo problemas territoriales. Entendemos la cartografía como la herramienta y el análisis como el objetivo final.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CASO DEMOSTRATIVO (PROYECTO SECCIÓN C) -->
+    <section id="caso" class="py-24 px-6 border-b border-brand-border/40 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="px-3 py-1 bg-brand-accent/10 border border-brand-accent/30 text-brand-accent text-xs font-mono rounded uppercase">Caso Demostrativo &middot; Proyecto Sección C</span>
+                <h3 class="text-2xl sm:text-4xl font-bold text-white mt-4">Inteligencia Electoral Aplicada</h3>
+                <p class="text-sm text-brand-muted mt-2 max-w-2xl mx-auto">
+                    Demostración de cómo integramos información electoral, territorial y socioeconómica para analizar el comportamiento del territorio en el Estado de México.
+                </p>
+            </div>
+
+            <!-- Esquema Conceptual del Caso -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12 text-center" data-aos="fade-up">
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-xs text-brand-accent uppercase font-mono block mb-1">Escalas de Análisis</span>
+                    <h5 class="text-sm font-bold text-white">TERRITORIO</h5>
+                    <p class="text-xs text-brand-muted mt-2">Estado &middot; Municipio &middot; Sección &middot; Manzana</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-xs text-brand-accent uppercase font-mono block mb-1">Fuentes Cruzadas</span>
+                    <h5 class="text-sm font-bold text-white">INFORMACIÓN</h5>
+                    <p class="text-xs text-brand-muted mt-2">Electoral &middot; Censal &middot; Territorial</p>
+                </div>
+                <div class="p-6 bg-brand-card border border-brand-border rounded-lg">
+                    <span class="text-xs text-brand-accent uppercase font-mono block mb-1">Resultados Obtenidos</span>
+                    <h5 class="text-sm font-bold text-white">ANÁLISIS</h5>
+                    <p class="text-xs text-brand-muted mt-2">Participación &middot; Patrones &middot; Hallazgos</p>
+                </div>
+            </div>
+
+            <!-- Visor del Caso / Modulo Interactivo existente -->
+            <div class="bg-brand-card border border-brand-border rounded-xl p-6" data-aos="fade-up">
+                <h4 class="text-sm font-semibold text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-map-location-dot text-brand-accent"></i> Visor Interactivo de Muestra (Resultados Electorales)
+                </h4>
+                <div class="w-full h-[500px] rounded-lg overflow-hidden bg-slate-900 border border-brand-border">
+                    <iframe 
+                        class="w-full h-full border-0" 
+                        src="Elección_presidencial_2024.html" 
+                        title="Caso Demostrativo Estado de México"
+                        loading="lazy"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="mt-4 text-center">
+                    <span class="text-xs text-brand-muted italic">De la información dispersa al análisis territorial.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: LA TECNOLOGÍA -->
+    <section class="py-20 px-6 border-b border-brand-border/40">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-widest mb-2">Infraestructura</h2>
+            <h3 class="text-2xl font-bold text-white mb-6">La tecnología es la herramienta. El análisis es el objetivo.</h3>
+            <p class="text-sm text-brand-muted leading-relaxed">
+                Utilizamos sistemas de información geográfica, modelos de datos y procesamiento espacial como el soporte técnico que permite transformar datos complejos en evidencia auditable. No vendemos licencias ni cartografía estática; generamos conocimiento operativo.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CONTACTO Y EQUIPO -->
+    <section id="contacto" class="py-24 px-6 border-b border-brand-border/40 bg-slate-950/50">
+        <div class="max-w-4xl mx-auto" data-aos="fade-up">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-widest mb-2">Contacto</h2>
+                <h3 class="text-2xl sm:text-3xl font-bold text-white">Proyecto Sección C &middot; CMAPS</h3>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border rounded-xl p-8 max-w-xl mx-auto text-center">
+                <h4 class="text-xl font-bold text-white mb-1">José Antonio Cardeña Medina</h4>
+                <p class="text-xs text-brand-accent uppercase font-mono mb-6">Inteligencia Territorial</p>
+                
+                <div class="space-y-3 text-sm text-slate-300">
+                    <div class="flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-envelope text-brand-accent"></i>
+                        <a href="mailto:politeiacmaps@gmail.com" class="hover:text-white transition">politeiacmaps@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CIERRE -->
+    <section class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">HABLEMOS DEL TERRITORIO</h3>
+            <p class="text-brand-muted text-base mb-8 leading-relaxed">
+                Si necesitas comprender mejor un territorio, integrar información dispersa o responder una pregunta compleja, conversemos.
+            </p>
+            <a href="mailto:politeiacmaps@gmail.com" class="inline-block bg-brand-accent text-brand-dark px-8 py-3 rounded-lg font-semibold text-sm hover:bg-sky-300 transition shadow-lg">
+                Iniciar Conversación
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-xs text-brand-muted border-t border-brand-border/40">
+        <p>CMAPS — Inteligencia Territorial &middot; Proyecto Sección C</p>
+    </footer>
+
+    <!-- Scripts de Animación -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
